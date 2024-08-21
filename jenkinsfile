@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'java Hello.java'
+                bat 'javac Hello.java'
+                bat 'java Hello'
             }
         }
     }
